@@ -1,1 +1,3 @@
-# study-hacking
+# study-webhacking
+# 웹 해킹 학습 기록
+웹 해킹을 공부하며 정리한 개념, 취약점, 실습 기록입니다.
