@@ -24,3 +24,10 @@ This causes the application to read from the following file path:
 The sequence ***../*** is valid within a file path, and means to step up one level in the directory structure. 
 The three consecutive ../ sequences step up from /var/www/images/ to the filesystem root, and so the file that is actually read is:
 ```/etc/passwd```
+
+On Unix-based operating systems, this is a standard file containing details of the users that are registered on the server, but an attacker could retrieve other arbitrary files using 
+the same technique
+
+On windows, both ```../``` and ```..\``` are valid directory traversal sequences. The following is an example of an equivalent attack against a Windows-based server:
+```https://insecure-website.com/loadImage?filename=..\..\..\windows\win.ini```
+
